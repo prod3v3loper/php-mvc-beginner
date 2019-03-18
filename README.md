@@ -1,5 +1,7 @@
 # PHP MVC Beginner
 
+> With twitter Bootstrap
+
 Model View Controller for beginners to bring the function way closer. 
 
 This is done with a switch and it should not look like that, because we can not handle so many pages properly then. But nevertheless it fulfills its purpose and is probably also easier to understand for beginners.
