@@ -10,7 +10,7 @@ Below are more examples and tutorials on an MVC that you can find here.
 
 # Contribute
 
-Please an [issue](https://github.com/prod3v3loper/php-auto-autoloader/issues) if you
+Please an [issue](https://github.com/prod3v3loper/php-mvc-beginner/issues) if you
 think something could be improved. Please submit Pull Requests when ever
 possible.
 
@@ -20,4 +20,4 @@ possible.
 
 # License
 
-[MIT](https://github.com/prod3v3loper/php-auto-autoloader/blob/master/LICENSE) - [prod3v3loper](https://www.tnado.com/author/prod3v3loper/)
+[MIT](https://github.com/prod3v3loper/php-mvc-beginner/blob/master/LICENSE) - [prod3v3loper](https://www.tnado.com/author/prod3v3loper/)
