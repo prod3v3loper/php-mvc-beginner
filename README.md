@@ -3,8 +3,10 @@
 Model View Controller for beginners to bring the function way closer. 
 
 This MVC is very simple and without a htaccess that would direct all calls to a file or would allow a mod_rewrite.
+There are no safety functions or validations in this example, it represents the simplest form of MVCs there
 
 Below you will find more examples and tutorials on a MVC that you can find here in the near future.
+[PHP MVC Advanced](https://github.com/prod3v3loper/php-mvc-advanced/)
 
 # Attention
 
