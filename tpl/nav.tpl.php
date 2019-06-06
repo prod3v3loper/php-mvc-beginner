@@ -1,21 +1,16 @@
-<div class="container">
-    <div class="row">
-        <nav class="navbar navbar-default">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="index.php">Brand</a>
-                <ul class="nav navbar-nav">
-                    <li><a href="index.php?p=home">Startseite</a></li>
-                    <li><a href="index.php?p=about">Über uns</a></li>
-                    <li><a href="index.php?p=service">Service</a></li>
-                    <li><a href="index.php?p=contact">Kontakt</a></li>
-                    <li><a href="index.php?p=reference">Referenz</a></li>
-                </ul>
-            </div>
-        </nav>
-        <ol class="breadcrumb">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Library</a></li>
-            <li class="active">Data</li>
-        </ol>
+<nav role="navigation"  id="mb-nav" class="mb-night-nav mb-col-24">
+    <div class="mb-nav--inner">
+        <div class="mb-container">
+            <a class="mb-nav--brand" href="#">Melabuai MVC Beginner</a>
+            <ul class="mb-nav--navbar mb-nav--list">
+                <li class="mb-nav--navbar-item"><a href="index.php?p=home">Home</a></li>
+                <li class="mb-nav--navbar-item"><a href="index.php?p=about">About</a></li>
+                <li class="mb-nav--navbar-item"><a href="index.php?p=blog">Blog</a></li>
+                <li class="mb-nav--navbar-item"><a href="index.php?p=contact">Contact</a></li>
+                <li class="mb-nav--navbar-item"><a href="index.php?p=support">Support</a></li>
+            </ul>
+            <a class="mb-nav--mobile-btn mb-nav--show" href="#mb-nav"><span></span><span></span><span></span></a>
+            <a class="mb-nav--mobile-btn mb-nav--hide" href="#"><span></span><span></span><span></span></a>
+        </div>
     </div>
-</div>
+</nav>

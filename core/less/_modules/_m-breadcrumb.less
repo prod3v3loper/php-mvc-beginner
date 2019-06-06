@@ -1,0 +1,49 @@
+
+.mb-breadcrumb {
+    
+    .mb-breadcrumb-list {
+
+        overflow: hidden;
+        display: block;
+        margin-left: 0;
+        padding: .5rem 20px;
+        list-style: outside none none;
+        background-color: @bg-default;
+        .border(1px, solid, @bd-default);
+
+        .mb-breadcrumb-list-item {
+
+            float: left;
+            margin: 0;
+            color: #008CBA;
+            font-size: .8rem;
+            text-transform: uppercase;
+
+            &:first-child {
+                &::before {
+                    
+                    content: " ";
+                }
+            }
+
+            .mb-breadcrumb-list-item-link {
+
+                color: #777;
+
+                &::after {
+
+                    position: relative;
+                    top: 1px;
+                    margin: 0 .66667rem;
+                    content: "/";
+                    color: #AAA;
+                }
+            }
+
+            .mb-breadcrumb-item-active {
+
+                color: #333;
+            }
+        }
+    }
+}

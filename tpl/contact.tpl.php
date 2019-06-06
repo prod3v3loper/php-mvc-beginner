@@ -1,20 +1,19 @@
-<main>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                
-                <h3><?php echo $content[0] ?></h3>
-                <p><?php echo $content[1] ?></p>
-                
-                <form action="index.php?p=submit" method="post">
-                    <div class="form-group"><input type="text" name="nachricht[name]" placeholder="Name" class="form-control"></div>
-                    <div class="form-group"><input type="text" name="nachricht[mail]" placeholder="E-Mail" class="form-control"></div>
-                    <div class="form-group"><textarea name="nachricht[message]" placeholder="Nachricht" class="form-control"></textarea></div>
-                    <button type="submit" name="nachricht[send]" class="btn btn-info">Senden</button>
-                </form>
-                
-            </div>
-            <div class="col-md-6"></div>
-        </div>
-    </div>
-</main>
+<div class="mb-wrap">
+
+    <main role="main" class="mb-main l-col--16">
+
+        <h2>Contact</h2>
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+
+        <form method="post" action="index.php?p=contact">
+            <div class="form-group"><input type="text" name="nachricht[name]" placeholder="Name" class="form-control"></div>
+            <div class="form-group"><input type="text" name="nachricht[mail]" placeholder="E-Mail" class="form-control"></div>
+            <div class="form-group"><textarea name="nachricht[message]" placeholder="Nachricht" class="form-control"></textarea></div>
+            <button type="submit" name="nachricht[send]" class="btn btn-info">Senden</button>
+        </form>
+
+    </main>
+
+    <?php require_once 'tpl/aside.tpl.php'; ?>
+
+</div>

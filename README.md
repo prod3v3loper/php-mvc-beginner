@@ -1,12 +1,14 @@
 # PHP MVC Beginner
 
-> With twitter Bootstrap
-
 Model View Controller for beginners to bring the function way closer. 
 
-This is done with a switch and it should not look like that, because we can not handle so many pages properly then. But nevertheless it fulfills its purpose and is probably also easier to understand for beginners.
+This MVC is very simple and without a htaccess that would direct all calls to a file or would allow a mod_rewrite.
 
 Below you will find more examples and tutorials on a MVC that you can find here in the near future.
+
+# Attention
+
+This one should not use in a real environment but unfortunately there is also something in real environments.
 
 # Contribute
 
@@ -16,7 +18,12 @@ possible.
 
 # Authors
 
-**Samet Tarim** - *All works*
+**[Samet Tarim](https://www.prod3v3loper.com)** - *All works*
+
+# Supporter
+
+[Tnado](https://www.tnado.com/blog/)
+[Hyperly](https://www.hyperly.de)
 
 # License
 

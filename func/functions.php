@@ -11,11 +11,11 @@
 function getData($id) {
 
     $data = array();
-    $data[] = array("Startseite", "Hier ein beispiel HOME");
-    $data[] = array("Über uns", "Hier ein beispiel ABOUT");
-    $data[] = array("Service", "Hier ein beispiel SERVICE");
-    $data[] = array("Kontakt", "Hier ein beispiel KONTAKT");
-    $data[] = array("Referenz", "Hier ein beispiel REFERENZ");
+    $data[] = array("Welcome to the Melabuai MVC Homepage", "This MVC is an <b>Beginner</b> Mode View Controller");
+    $data[] = array("About", "I'm a web engineer and I'm working on various programming languages ​​frameworks and techniques.");
+    $data[] = array("Blog", "I offer you a lot of information and that is very valuable information.");
+    $data[] = array("Contact", "Here's an example CONTACT");
+    $data[] = array("Support", "Here's an example Support");
 
     return $data[$id];
 }
@@ -27,20 +27,13 @@ function getData($id) {
  */
 function debugging($mode = false) {
 
-    if (DEBUG || $mode === true) {
+    if ($mode === true) {
 
-        echo '<pre>';
-        echo 'GET: ';
-        print_r($_GET);
-        echo 'POST: ';
-        print_r($_POST);
-        echo 'REQUEST: ';
-        print_r($_REQUEST);
-        echo 'SERVER: ';
-        print_r($_SERVER);
-        echo '</pre>';
-        
-        ini_set('display_errors', 1);
+        // Overwrite ini settings debug
+        ini_set('html_errors', 1);
+        ini_set('error_reporting', -1); // E_ALL
+        ini_set('display_errors', 1); // On
+        error_reporting(-1); // Report all
     }
 }
 
@@ -51,22 +44,19 @@ function debugging($mode = false) {
  * If javascript not exists we redirect with html
  */
 function redirectURL($file) {
-    
+
     if (!headers_sent()) {
 
         header("Location: $file"); // HEADER LOCATION
         die();
-    }
-    else {
+    } else {
 
         echo '<script type="text/javascript">';
         echo 'window.location.href="' . $file . '";'; // WINDOW LOCATION
-        die();
         echo '</script>';
 
         echo '<noscript>';
         echo '<meta http-equiv="refresh" content="0;url=' . $file . '" />'; // HTML REFRESH
-        die();
         echo '</noscript>';
     }
 }

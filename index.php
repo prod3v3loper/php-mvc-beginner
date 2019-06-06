@@ -3,33 +3,37 @@
 // Load Configs
 require_once 'config.php';
 
-// Debugging, this function allow to manipuliate with true param and overwrite the defined DEBUG variable.
-debugging();
-
 /**************************************************
  * SIMPLE MVC 
- * Here we need php GET param and switch funtion.
+ * This MVC is very simple and without a htaccess that would direct all calls to a file or would allow a mod_rewrite.
  ******************************************************************************/
 
 // Grab the GET param p for Page, we set in our url
+// Here is the problem that we do not really control what comes in that should be much safer, that's not safe enough.
+// For example, an array with a whitelist
 $page = (string) filter_input(INPUT_GET, 'p', FILTER_SANITIZE_ENCODED);
 
-// Switch
+// Router
 switch ($page) {
+    // Add more pages
     case "about":
         $content = getData(1);
+        $data["image"] = "core/img/apple-mac.jpg";
         $typ = 'tpl/content.tpl.php';
         break;
-    case "service":
+    case "blog":
         $content = getData(2);
+        $data["image"] = "core/img/apple-mac.jpg";
         $typ = 'tpl/content.tpl.php';
         break;
     case "contact":
         $content = getData(3);
+        $data["image"] = "core/img/apple-mac.jpg";
         $typ = 'tpl/contact.tpl.php';
         break;
-    case "reference":
+    case "support":
         $content = getData(4);
+        $data["image"] = "core/img/apple-mac.jpg";
         $typ = 'tpl/content.tpl.php';
         break;
     case "submit":
@@ -52,9 +56,10 @@ switch ($page) {
     break;
     default:
         $content = getData(0);
+        $data["image"] = "core/img/apple-mac.jpg";
         $typ = 'tpl/content.tpl.php';
         break;
 }
 
 // Default
-include_once 'tpl/default.tpl.php';
+require_once 'tpl/default.tpl.php';
