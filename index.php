@@ -1,5 +1,11 @@
 <?php
 
+/**
+ *  @copyright : Samet Tarim
+ *  @author    : Samet Tarim aka prod3v3loper
+ *  @link      : https://www.prod3v3loper.com/
+ */
+
 // Load Configs
 require_once 'config.php';
 
